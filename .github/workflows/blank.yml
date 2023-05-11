@@ -21,3 +21,7 @@ jobs:
     - name: Test with pytest
       run: pytest
 
+    - name: Look around
+      run: |
+        echo $GITHUB_EVENT_NAME
+        printenv | sort
